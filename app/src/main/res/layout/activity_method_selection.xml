@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MethodSelectionActivity">
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"
+        android:src="@drawable/side_bar_green"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_shape"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:text=" الدفع"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/dosis_extrabold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="طريقة"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="@font/dosis_extrabold"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"/>
+
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/font_size_20sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/dosis_extrabold"
+                android:layout_height="wrap_content"
+                android:text="COD (الدفع عند الاستلام)"
+                android:textColor="@color/black"
+                android:layout_marginRight="@dimen/margin_basic_15dp"/>
+
+            <ImageView
+                android:id="@+id/cod"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/radio_btn_circle"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_basic_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/font_size_20sp"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="التقط بنفسي"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dosis_extrabold"
+                android:textColor="@color/black"
+                android:layout_marginRight="@dimen/margin_basic_15dp"/>
+
+            <ImageView
+                android:id="@+id/myself"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/radio_btn_circle"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_marginTop="@dimen/margin_basic_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="@dimen/font_size_20sp"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/dosis_extrabold"
+                android:layout_height="wrap_content"
+                android:text="ادفع ببطاقة الائتمان / مدى"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_basic_15dp"/>
+
+            <ImageView
+                android:id="@+id/card"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/radio_btn_circle"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_continue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_box">
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="يكمل"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

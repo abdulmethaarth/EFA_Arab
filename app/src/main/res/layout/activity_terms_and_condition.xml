@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TermsAndConditionActivity">
+
+
+    <ImageView
+        android:layout_toRightOf="@+id/side_menu"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_marginTop="@dimen/margin_basic_10dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_basic_10dp"
+        android:src="@drawable/splash_new_logo" />
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/font_size_20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:gravity="right"
+            android:layout_margin="@dimen/margin_basic_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_15sp"
+            android:layout_marginBottom="@dimen/margin_basic_20dp"
+            android:text="Terms and Conditions"/>
+
+        <TextView
+            android:gravity="right"
+            android:layout_margin="@dimen/margin_basic_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_15sp"
+            android:layout_marginBottom="@dimen/margin_basic_20dp"
+            android:text=""/>
+
+    </ScrollView>
+
+</LinearLayout>

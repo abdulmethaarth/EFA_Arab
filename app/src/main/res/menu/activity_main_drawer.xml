@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="فهرس" />
+
+
+        <item
+            android:id="@+id/cart"
+            android:title="عربتك" />
+
+        <item
+            android:id="@+id/fav"
+            android:title="المفضلة" />
+
+
+        <item
+            android:id="@+id/your_orders"
+            android:title="طلبك" />
+
+        <item
+            android:id="@+id/reset_pass"
+            android:title="إعادة تعيين كلمة المرور" />
+        <item
+            android:id="@+id/setting"
+            android:title="إعدادات" />
+
+        <item
+            android:id="@+id/terms_condition"
+            android:title="سياسة الشروط والاحكام" />
+
+        <item
+            android:id="@+id/privacy_policy"
+            android:title="سياسة الخصوصية" />
+
+    </group>
+
+</menu>
